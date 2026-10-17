@@ -1,25 +1,21 @@
-﻿# Jaaykat — Code & Chain Dakar 2026
+﻿# Jaaykat
 
-**Phrase :** Jaaykat donne au petit commerçant un QR pour encaisser en Lightning, un tableau de bord qui lui dit quand il vend, un score construit sur ses vraies ventes, et un retrait vers Wave ou Orange Money, le tout sur l’API Bitnob.
+Code & Chain Dakar 2026 — encaissement Lightning, tableau de bord, score, retrait mobile money (Bitnob).
 
 ## Repos
 
-| Repo | Qui | Rôle |
-|------|-----|------|
-| [bitnob-lite](https://github.com/Silanoa/bitnob-lite) | Collègue | SDK TypeScript Bitnob → npm |
-| [jaaykat-api](https://github.com/Silanoa/jaaykat-api) | Backend | Fastify + SQLite + webhooks |
-| [jaaykat-web](https://github.com/Silanoa/jaaykat-web) | Web + mobile | PWA React installable |
+| Repo | Rôle |
+|------|------|
+| [bitnob-lite](https://github.com/Silanoa/bitnob-lite) | SDK (spec + plan ; code par le propriétaire SDK) |
+| [jaaykat-api](https://github.com/Silanoa/jaaykat-api) | Backend |
+| [jaaykat-web](https://github.com/Silanoa/jaaykat-web) | PWA |
 
-## Docs
+## Docs hub
 
-- [DEPLOY.md](./DEPLOY.md) — tunnel cloudflared, npm, démo demain
-- [CONTRACTS.md](./CONTRACTS.md) — contrats JSON inter-repos
-- Specs dans chaque repo (`SPEC.md`)
+- [AGENTS.md](./AGENTS.md)
+- [DEPLOY.md](./DEPLOY.md)
+- [CONTRACTS.md](./CONTRACTS.md)
 
 ## Démo
 
-Laptop + `cloudflared` → même origine HTTPS. Bitnob appelé uniquement depuis le backend (IP whitelist). Railway hors hackathon.
-
-## Licence
-
-MIT — code écrit pendant l’événement (17–18 oct 2026). Préparé avant : recherche doc + tests manuels API uniquement.
+Laptop + cloudflared. Bitnob appelé uniquement depuis le backend (IP whitelist). Railway hors période de hackathon.
