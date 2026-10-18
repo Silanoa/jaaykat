@@ -4,12 +4,12 @@ Version : `2026-10-17` — alignée sur le dossier projet Jaaykat v2.
 
 ## 1. SDK → API
 
-Package : `@silanoa/bitnob-lite` (scope npm à confirmer = `npm whoami`).
+Package : [`bitnob-lite`](https://www.npmjs.com/package/bitnob-lite) 0.1.0 sur npm.
 
 ```ts
-import { BitnobClient } from "@silanoa/bitnob-lite";
+import { createBitnobClient } from "bitnob-lite";
 
-const client = new BitnobClient({
+const client = createBitnobClient({
   clientId: process.env.BITNOB_CLIENT_ID!,
   clientSecret: process.env.BITNOB_CLIENT_SECRET!,
   onRequest: (log) => { /* journal api_calls */ },
@@ -18,9 +18,7 @@ const client = new BitnobClient({
 
 L’API **ne** réimplémente **pas** HMAC, retries, parse webhooks. Si une méthode manque → issue sur `bitnob-lite`, pas de fork local.
 
-Versions pendant le hackathon :
-- Avant publish : `"@silanoa/bitnob-lite": "file:../bitnob-lite"`
-- Après publish : `"@silanoa/bitnob-lite": "0.1.0"`
+Dépendance de `jaaykat-api` : `"bitnob-lite": "^0.1.0"`.
 
 ## 2. API → Web (JSON)
 

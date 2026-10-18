@@ -5,7 +5,7 @@
 | Quoi | Où | Pourquoi |
 |------|----|----------|
 | Backend + PWA | **Laptop** + tunnel `cloudflared` | Seule IP whitelist Bitnob = laptop |
-| SDK | **npm** public `@silanoa/bitnob-lite` (confirmer scope npm) | Livrable open source jury |
+| SDK | **npm** public `bitnob-lite` 0.1.0 | Livrable open source jury |
 | Code | **GitHub** public (3 repos) | Soumission codeandchain.xyz |
 | Railway | **Pas pendant le hackathon** | IP fixe = plan Pro (test R1 après soumission) |
 
@@ -53,15 +53,9 @@ cloudflared tunnel --url http://localhost:3000
 # - Régénérer / imprimer affiche A6 QR
 ```
 
-## Publication SDK (collègue, bloc 5 ~06h30–09h00)
+## Publication SDK
 
-```bash
-npm login   # 2FA auth-and-writes
-cd bitnob-lite
-npm pack --dry-run   # pas de .env, pas de secrets
-npm publish --access public
-# puis dans jaaykat-api : remplacer file: par @silanoa/bitnob-lite@0.1.0
-```
+`bitnob-lite@0.1.0` est publié sur npm ; le tag `v0.1.0` est sur `Silanoa/bitnob-lite`.
 
 ## Ordre GitHub / soumission
 
