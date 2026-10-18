@@ -12,7 +12,6 @@ Code & Chain Dakar 2026 — encaissement Lightning, tableau de bord, score, retr
 
 ## Docs hub
 
-- [AGENTS.md](./AGENTS.md)
 - [DEPLOY.md](./DEPLOY.md)
 - [CONTRACTS.md](./CONTRACTS.md)
 
